@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "teszt1": {
@@ -51,6 +51,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -104,6 +106,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "teszt1"
+    }
+  },
+  "defaultProject": "teszt1",
+  "cli": {
+    "analytics": false
+  }
 }
