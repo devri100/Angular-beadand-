@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['/list']">Korsós Richárd UCT4M4</a>
+
+    <button *ngIf="loggedIn()" (click)="logout()" class="btn btn-dark ml-auto ">Kijelentkezés</button>
+</nav>
+
+<div class="container my-5">
+    <router-outlet></router-outlet>
+</div>
+
+
